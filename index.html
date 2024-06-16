@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cars Slider</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="car-div">
+                <img class="img" width="390" height="250" src="images/img1.jpg" alt="BMW">
+                <h2>BMW X6</h2>
+                <p><span class="p-span">$</span>66000</p>
+                <button class="button-bmw">Images</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="car-div">
+                <img class="img" width="390" height="250" src="images1/img1.jpg" alt="MERcEDES">
+                <h2>Mercedes Benz C Class</h2>
+                <p><span class="p-span">$</span>60000</p>
+                <button class="button-merc">Images</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-bmw">
+        <i class="fa-solid fa-x x-bmw"></i>
+    <div class="arrows">
+        <i class="fa-solid fa-arrow-left" onclick="sliderFuncBmw('left')"></i>
+        <i class="fa-solid fa-arrow-right" onclick="sliderFuncBmw('right')"></i>
+    </div>
+    <div class="items-bmw"></div>
+    </div>
+
+    <div class="slider-merc">
+        <i class="fa-solid fa-x x-merc"></i>
+    <div class="arrows">
+        <i class="fa-solid fa-arrow-left" onclick="sliderFuncMerc('left')"></i>
+        <i class="fa-solid fa-arrow-right" onclick="sliderFuncMerc('right')"></i>
+    </div>
+    <div class="items-merc"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
